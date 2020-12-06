@@ -44,7 +44,7 @@ let usuarioSchema = new Schema({
     }
 });
 
-
+//modificar el método toJSON para que no retorne la contraseña
 usuarioSchema.methods.toJSON = function() {
 
     let user = this;
